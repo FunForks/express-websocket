@@ -23,8 +23,8 @@ function serverStarted() {
 
 // Create a WebSocket server and run it on the same domain and
 // port as the HTTP server, but with the WS protocol
-const WebSocket = require('ws')
-const WebSocketServer = new WebSocket.Server({ server })
+const { Server } = require('ws')
+const WebSocketServer = new Server({ server })
 
 
 
